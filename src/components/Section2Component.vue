@@ -213,9 +213,8 @@ export default {
   background-color: #727272;
   .about-box {
     margin-top: 10vh;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    padding: 0 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,9 +233,10 @@ export default {
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 3%;
+        padding-bottom: 1rem;
+
         a {
-          font-size: 2rem;
+          font-size: 1.7rem;
           font-family: "Ubuntu", sans-serif;
           color: #e5e5e5;
         }
@@ -251,7 +251,7 @@ export default {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          justify-content: flex-start;
+          justify-content: space-between;
 
           h1 {
             font-size: 1rem;

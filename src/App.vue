@@ -3,6 +3,7 @@
   <Header />
   <Section1 />
   <Section2 />
+  <ProducerCarousel />
   <Section3 />
   <Footer />
 </template>
@@ -14,6 +15,7 @@ import Section1 from "@/components/Section1Component.vue";
 import Section2 from "@/components/Section2Component.vue";
 import Section3 from "@/components/Section3Component.vue";
 import Footer from "@/components/FooterComponent.vue";
+import ProducerCarousel from "@/components/CarouselProducers.vue";
 
 export default {
   data() {
@@ -26,6 +28,7 @@ export default {
     Section2,
     Section3,
     Footer,
+    ProducerCarousel,
   },
 };
 </script>

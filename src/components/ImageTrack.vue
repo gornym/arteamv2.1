@@ -168,7 +168,7 @@ export default {
 }
 .img-text {
   margin-right: 5%;
-  font-size: 10rem;
+  font-size: 6rem;
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
   display: flex;
