@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section id="section1">
     <video
       ref="myVideo"
@@ -65,4 +65,4 @@ section {
     object-fit: cover;
   }
 }
-</style>
+</style> -->
