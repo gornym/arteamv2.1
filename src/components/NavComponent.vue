@@ -4,7 +4,7 @@
       <a @click="scrollToSection2"> O NAS</a>
     </div>
     <div class="middle-nav">
-      <img alt="logo" :src="logoSrc" draggable="false" />
+      <img alt="logo" src="@/assets/logo_LEN4lW7LO4.webp" draggable="false" />
     </div>
     <div class="right-nav">
       <a @click="scrollToSection3">REALIZACJE</a>

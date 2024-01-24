@@ -1,9 +1,5 @@
 <template>
-  <header
-    class="animated"
-    :style="{ backgroundImage: `url('${headerSrcBg}')` }"
-    @animationend="headerAnimationEnd"
-  >
+  <header class="animated" @animationend="headerAnimationEnd">
     <div class="header-heading animate-color" :class="{ hovered: isHovered }">
       Kompleksowe Wykończenia Wnętrz
     </div>
@@ -65,6 +61,8 @@ header {
   height: 100vh;
   width: 100%;
   background-color: #1b1b1b;
+  background-image: url("@/assets/background_dFTbcW3kF9.webp");
+
   background-size: cover;
   background-position: center;
   border-image: fill 0 linear-gradient(#0003, #000000fd);

@@ -1,7 +1,6 @@
 <template>
   <section id="section1">
     <video
-      v-if="videoSrc"
       ref="myVideo"
       autoplay
       muted
@@ -9,7 +8,7 @@
       playsinline
       @loadeddata="startVideoPlayback"
     >
-      <source :src="videoSrc" type="video/mp4" />
+      <source src="@/assets/IMG_8139.mp4" type="video/mp4" />
       Twoja przeglądarka nie obsługuje tagu video.
     </video>
   </section>

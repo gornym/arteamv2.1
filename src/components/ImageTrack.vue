@@ -8,7 +8,11 @@
       Nasze<br />
       REALIZACJE
       <div class="arrow-box">
-        <img alt="arrow" :src="arrowImg" draggable="false" />
+        <img
+          alt="arrow"
+          src="@/assets/10oBaSWYAoW0_Vcr6to87Hh.webp"
+          draggable="false"
+        />
       </div>
     </h1>
     <img
@@ -34,23 +38,23 @@ export default {
       arrowImg: "",
       images: [
         {
-          src: "",
+          src: require("@/assets/3ne9tJ4Nnf8_owh0XPvX4w.webp"),
         },
         {
-          src: "",
+          src: require("@/assets/56JkVEJkfe6_XRjyxsVgoa.webp"),
         },
         {
-          src: "",
+          src: require("@/assets/8hBkTBpaffd_sIdxNB9JA5.webp"),
         },
         {
-          src: "",
+          src: require("@/assets/6vSrKyjKz85_W7fpP0Nmgb.webp"),
         },
         {
-          src: "",
+          src: require("@/assets/7EtiWm2Vd8w_THLxuw2SAC.webp"),
         },
 
         {
-          src: "",
+          src: require("@/assets/99bda0EiqKt_imYDlBHpHL.webp"),
         },
       ],
     };
@@ -95,24 +99,24 @@ export default {
         );
       }
     },
-    async loadImg(id, index) {
-      try {
-        const record = await this.pb.collection("img").getOne(id, {
-          expand: "relField1,relField2.subRelField",
-        });
+    // async loadImg(id, index) {
+    //   try {
+    //     const record = await this.pb.collection("img").getOne(id, {
+    //       expand: "relField1,relField2.subRelField",
+    //     });
 
-        // Sprawdź, czy to obraz strzałki
-        if (index === "arrowImg") {
-          this.arrowImg = `http://127.0.0.1:8090/api/files/img/${id}/${record.field}`;
-        } else {
-          this.images[index] = {
-            src: `http://127.0.0.1:8090/api/files/img/${id}/${record.field}`,
-          };
-        }
-      } catch (error) {
-        console.error("Błąd podczas ładowania obrazka:", error);
-      }
-    },
+    //     // Sprawdź, czy to obraz strzałki
+    //     if (index === "arrowImg") {
+    //       this.arrowImg = `http://127.0.0.1:8090/api/files/img/${id}/${record.field}`;
+    //     } else {
+    //       this.images[index] = {
+    //         src: `http://127.0.0.1:8090/api/files/img/${id}/${record.field}`,
+    //       };
+    //     }
+    //   } catch (error) {
+    //     console.error("Błąd podczas ładowania obrazka:", error);
+    //   }
+    // },
   },
   async mounted() {
     window.addEventListener("mousedown", this.handleOnDown);
@@ -125,13 +129,13 @@ export default {
     window.addEventListener("touchmove", (e) =>
       this.handleOnMove(e.touches[0])
     );
-    await this.loadImg("qedslpylcx0pert", 0);
-    await this.loadImg("1qgu4pyt9noqfn3", 1);
-    await this.loadImg("bwrdeaub46dass1", 2);
-    await this.loadImg("cs1b9louvdi2tfl", 3);
-    await this.loadImg("ahs8hrz8f302r2v", 4);
-    await this.loadImg("14kpyfpr11xzd2o", 5);
-    await this.loadImg("o3kp4puie1g0cou", "arrowImg");
+    // await this.loadImg("qedslpylcx0pert", 0);
+    // await this.loadImg("1qgu4pyt9noqfn3", 1);
+    // await this.loadImg("bwrdeaub46dass1", 2);
+    // await this.loadImg("cs1b9louvdi2tfl", 3);
+    // await this.loadImg("ahs8hrz8f302r2v", 4);
+    // await this.loadImg("14kpyfpr11xzd2o", 5);
+    // await this.loadImg("o3kp4puie1g0cou", "arrowImg");
   },
   beforeUnmount() {
     window.removeEventListener("mousedown", this.handleOnDown);

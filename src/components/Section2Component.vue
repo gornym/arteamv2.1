@@ -150,10 +150,10 @@
       <div class="about-img">
         <img
           alt="sec2-photo1"
-          :src="aboutImg1"
+          src="@/assets/1EcBN3y29dF_rSKhJbMhXw.webp"
           style="transform: translateX(100px)"
         />
-        <img alt="sec2-photo2" :src="aboutImg2" />
+        <img alt="sec2-photo2" src="@/assets/2QEAx0Sr6Fi_FAFpYlTKSX.webp" />
       </div>
     </div>
   </section>

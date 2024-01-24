@@ -4,18 +4,22 @@
       <a class="copy-text">AR-TEAM © 2016 - 2024 All rights reserved. </a>
     </div>
     <div class="logo">
-      <img alt="logo" :src="footerLogo" draggable="false" />
+      <img
+        alt="logo"
+        src="@/assets/11kYYcpsxOBF_60iNMFrkAQ.webp"
+        draggable="false"
+      />
     </div>
     <div class="social-media">
       <a class="social" href="https://www.facebook.com/arteamwykonczeniewnetrz">
-        <img alt="facebook" :src="fbIcon" />
+        <img alt="facebook" src="@/assets/12bU6NRZphp7_RxdM02iw3n.webp" />
       </a>
       <a
         class="social"
         href="https://www.instagram.com/roman.arteam"
         style="padding-right: 2rem"
       >
-        <img alt="instagram" :src="igIcon" />
+        <img alt="instagram" src="@/assets/13tZmlP1Wghw_P31B8RQ8gU.webp" />
       </a>
     </div>
   </div>
