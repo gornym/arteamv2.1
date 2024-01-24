@@ -1,7 +1,7 @@
 <template>
   <Nav />
   <Header />
-  <Section1 />
+  <!-- <Section1 /> -->
   <Section2 />
   <ProducerCarousel />
   <Section3 />
@@ -11,7 +11,7 @@
 <script>
 import Nav from "@/components/NavComponent.vue";
 import Header from "@/components/HeaderComponent.vue";
-import Section1 from "@/components/Section1Component.vue";
+// import Section1 from "@/components/Section1Component.vue";
 import Section2 from "@/components/Section2Component.vue";
 import Section3 from "@/components/Section3Component.vue";
 import Footer from "@/components/FooterComponent.vue";
@@ -24,7 +24,7 @@ export default {
   components: {
     Nav,
     Header,
-    Section1,
+    // Section1,
     Section2,
     Section3,
     Footer,
